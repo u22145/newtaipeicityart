@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- For Window Tab Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#233D63">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#233D63">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#233D63">
+	<title>Events - 2023 New Taipei City Arts Festival 「NEW ART LAND」</title>
+	<meta name="description" content="首次新北城市藝術節以「新生地」為題，集結國內外藝術家及28支表演團隊，創作13件視覺藝術、92場表演藝術作品，以舊容新，以新融舊，慶祝當下，看見改變中的現在。">
+	<meta property="og:title" content="Events - 2023 New Taipei City Arts Festival 「NEW ART LAND」">
+	<meta property="og:description"
+		content="首次新北城市藝術節以「新生地」為題，集結國內外藝術家及28支表演團隊，創作13件視覺藝術、92場表演藝術作品，以舊容新，以新融舊，慶祝當下，看見改變中的現在。">
+	<meta property="og:image" content="/images/share.jpg">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="../images/logo.png">
+	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- responsive style sheet -->
+	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<!-- Fix Internet Explorer ______________________________________-->
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+	<script src="../vendor/jquery.2.2.3.min.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VRDYE6PMYJ"></script>
+	<script src="../js/ga.js"></script>
+</head>
+
+<body class="en">
+	<div class="main-page-wrapper">
+
+		<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+		<!-- Preloader -->
+		<section>
+			<div id="preloader">
+			</div>
+		</section>
+		<!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+		<div class="header"></div>
+		<div class="navbox"></div>
+		<!-- 
+			=============================================
+				E-Commerce Product Area
+			============================================== 
+			-->
+
+		<div class="full-width-container pt-90">
+			<h2>EVENTS <span>活動總覽</span></h2>
+			<!-- SHOP SHOWCASE -->
+			<div class="product-showcase">
+				<div class="row events">
+					<div class="mapBox col-12">
+						<div id="map" style=" width: 100%;"></div>
+						<div class="map_info col-lg-12 col-xl-6">
+							<div class="row">
+								<div class="imgB col-lg-12 col-xl-6"><img src="../images/map/map_info1.svg" alt="日光大道">
+								</div>
+								<div class="imgB col-lg-12 col-xl-6"><img src="../images/map/map_info2.svg" alt="日光大道">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 text-right">
+						<select class="event-type-select"  id="eventType">
+							<option value="all">All</option>
+							<option value="vision">VISUAL ARTWORKS</option>
+							<option value="performance">PERFORMANCES</option>
+							<option value="special">SPECIAL EVENTS</option>
+							<option value="sports">RESPONSE EXHIBITIONS</option>
+						</select>
+					</div>
+					<div class="items col-12 ">
+						<div data-eventtype="vision" class="row eventItem1">
+						</div>
+						<div data-eventtype="performance" class="row eventItem2">
+						</div>
+						<div data-eventtype="special" class="row eventItem3">
+						</div>
+						<div data-eventtype="sports" class="row eventItem4">
+						</div>
+					</div>
+				</div> <!-- /.row -->
+			</div> <!-- /.product-showcase -->
+		</div> <!-- /.full-width-container -->
+
+		<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+		<footer class=" footer theme-footer-one"></footer> <!-- /.theme-footer-one -->
+		<!-- Optional JavaScript _____________________________  -->
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<!-- jQuery -->
+		<script src="../vendor/jquery.2.2.3.min.js"></script>
+		<!-- Popper js -->
+		<script src="../vendor/popper.js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+		</script>
+		<!-- menu  -->
+		<script src="../vendor/mega-menu/assets/js/custom.js"></script>
+		<!-- js ui -->
+		<script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
+		<!-- Select js -->
+		<script src="../vendor/selectize.js/selectize.min.js"></script>
+		<!-- AOS js -->
+		<script src="../vendor/aos-next/dist/aos.js"></script>
+		<!-- js count to -->
+		<script src="../vendor/jquery.appear.js"></script>
+		<script src="../vendor/jquery.countTo.js"></script>
+		<!-- owl.carousel -->
+		<script src="../vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- Fancybox -->
+		<script src="../vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<!-- Language js -->
+		<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+		<!-- Theme js -->
+		<script src="../js/lang.js"></script>
+		<script src="../js/theme.js"></script>
+		<script src="js/all.js"></script>
+	</div> <!-- /.main-page-wrapper -->
+
+	<script>
+		// 篩選
+		function eventTypeSelect(value) {
+			if (value == "all") {
+				$('.items>div').removeClass('hidden');
+			} else {
+				$('.items>div').addClass('hidden');
+				$('.items>div[data-eventtype="' + value + '"]').removeClass('hidden');
+			}
+		}
+		$(window).bind("pageshow", function () {
+			eventTypeSelect($('.event-type-select').val())
+		})
+		$(".event-type-select").change(function () {
+			eventTypeSelect($('.event-type-select').val())
+		});
+	</script>
+	<script>
+		//範圍設定
+		var corner1_lat = 24.946204; //左下
+		var corner1_lng = 121.349000; // 右上
+		var corner2_lat = 24.948588; //左上
+		var corner2_lng = 121.354004; //右上
+		var deviceWidth = window.innerWidth;
+		var minZoom; // 地圖的最小縮放級別
+		var centerPoint; // 設定地圖初始視圖的中心點座標和縮放級別
+		var zoomLevel; // 設定地圖初始視圖的中心點座標和縮放級別
+		if (deviceWidth < 988) {
+			// 小型行動裝置
+			minZoom = 17.3;
+			centerPoint =  [20.947404, 114.10650]
+			zoomLevel = 17.3;
+		} else {
+			// 大型行動裝置
+			minZoom = 19;
+			centerPoint = [24.947604, 121.359650]
+			zoomLevel = 19.2;
+		}
+
+		//地圖設定
+		var map = L.map('map', {
+			minZoom: minZoom, // 地圖的最小縮放級別
+			maxZoom: 23, // 地圖的最大縮放級別
+			zoomSnap: 0.5,
+			zoomDelta: 0.5,
+			wheelPxPerZoomLevel: 100, //滑鼠滾輪zoom的幅度 (數值越小越縮放幅度越大)
+			maxBounds: [
+				[corner1_lat, corner1_lng],
+				[corner2_lat, corner2_lng]
+			], // 限制拖曳的範圍
+			maxBoundsViscosity: 1.0, // 控制拖曳超出範圍時的彈回速度
+			preferCanvas: true
+		}).setView(centerPoint, zoomLevel); // 設定地圖初始視圖的中心點座標和縮放級別
+
+
+		//設定圖片
+		var imageUrl = '../images/map/map.svg'; //圖檔位置
+		var imageBounds = [
+			[corner1_lat, corner1_lng],
+			[corner2_lat, corner2_lng]
+		]; // 圖片顯示的範圍
+		L.imageOverlay(imageUrl, imageBounds).addTo(map);
+
+		//圖標設定
+		function customIcon(iconUrl) {
+			var currentZoom = map.getZoom();
+			var size = 40;
+
+			// 根據縮放級別調整圖示大小
+			// range = Math.pow(2, currentZoom - map.getMinZoom());
+			range = 1;
+
+			var iconSize = [size * range, size * range];
+
+			return L.icon({
+				iconUrl: iconUrl,
+				iconSize: iconSize,
+			})
+		}
+
+		var isMaxZoom = 0;
+		map.on('zoomend', function (event) {
+
+			//修正Andorid手勢操作zoom放大，會有機率破圖的bug
+			if (map.getZoom() >= map.getMaxZoom()) {
+				isMaxZoom++;
+
+				if (isMaxZoom > 1) {
+					setTimeout(() => {
+						map.setZoom(map.getMaxZoom() - 0.5);
+					}, 100);
+				}
+			} else {
+				isMaxZoom = 0;
+			}
+		});
+
+
+
+		// customIcon2
+		const customIcon2 = L.icon({
+			iconUrl: '../images/icon/02pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947444, 121.350550], {
+				icon: customIcon2,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event2.html' target='_blank'>02.NEVERLAND</a>")
+			.openPopup();
+
+		// customIcon3
+		const customIcon3 = L.icon({
+			iconUrl: '../images/icon/03pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947504, 121.350900], {
+				icon: customIcon3,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event3.html' target='_blank'>03.PARALLEL CHAIN</a>")
+			.openPopup();
+
+		// customIcon4
+		const customIcon4 = L.icon({
+			iconUrl: '../images/icon/04pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947504, 121.351050], {
+				icon: customIcon4,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event4.html' target='_blank'>04.WEAVING ROUTE</a>")
+			.openPopup();
+
+		// customIcon5
+		const customIcon5 = L.icon({
+			iconUrl: '../images/icon/05pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947784, 121.350048], {
+				icon: customIcon5,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event5.html' target='_blank'>05.ISLANDS</a>")
+			.openPopup();
+
+		// customIcon6
+		const customIcon6 = L.icon({
+			iconUrl: '../images/icon/06pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947874, 121.349958], {
+				icon: customIcon6,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				" <a href='../en/eventPages/vision/event6.html' target='_blank' style='text-align: center;'>06.NEW TAIPEI CITY BLOWING AND SHINING IN SPLENDOR</a>"
+				)
+			.openPopup();
+
+		// customIcon7
+		const customIcon7 = L.icon({
+			iconUrl: '../images/icon/07pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947984, 121.349958], {
+				icon: customIcon7,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event7.html' target='_blank'>07.Renewing</a>")
+			.openPopup();
+
+		// customIcon8
+		const customIcon8 = L.icon({
+			iconUrl: '../images/icon/08pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.948070, 121.349605], {
+				icon: customIcon8,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event8.html' target='_blank'>08.CONCRETE ZOO</a>")
+			.openPopup();
+
+		// customIcon9
+		const customIcon9 = L.icon({
+			iconUrl: '../images/icon/09pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947674, 121.349758], {
+				icon: customIcon9,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event9.html' target='_blank'>09.FLIP</a>")
+			.openPopup();
+
+		// customIcon10
+		const customIcon10 = L.icon({
+			iconUrl: '../images/icon/10pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947250, 121.350900], {
+				icon: customIcon10,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event10.html' target='_blank'>10.THESE HILLS ARE MOVING QUIETLY</a>")
+			.openPopup();
+
+		// customIcon11
+		const customIcon11 = L.icon({
+			iconUrl: '../images/icon/11pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947300, 121.352300], {
+				icon: customIcon11,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event11.html' target='_blank'>11.WITH LIGHT, SHIFTING</a>")
+			.openPopup();
+
+		// customIcon12
+		const customIcon12 = L.icon({
+			iconUrl: '../images/icon/12pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947300, 121.353100], {
+				icon: customIcon12,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event12.html' target='_blank'>12.RESTand</a>")
+			.openPopup();
+
+		// customIcon13
+		const customIcon13 = L.icon({
+			iconUrl: '../images/icon/13pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947400, 121.353410], {
+				icon: customIcon13,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event13.html' target='_blank'>13.BLACK DREAM</a>")
+			.openPopup();
+
+		// customIcon1
+		const customIcon1 = L.icon({
+			iconUrl: '../images/icon/01pink.svg',
+			iconSize: [42, 42],
+		});
+		var marker = L.marker(
+			[24.947144, 121.350750], {
+				icon: customIcon1,
+				opacity: 1
+			});
+		marker.addTo(map).bindPopup(
+				"<a href='../en/eventPages/vision/event1.html' target='_blank'>01.SUNLIGHT BOULEVARD</a>")
+			.openPopup();
+	</script>
+
+</body>
+
+</html>

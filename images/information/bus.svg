@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-02bd2d4c-ed32-4153-a958-9b6df03ab609" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .uuid-eaa927ae-b45d-4e54-8dfe-4a54e77e3489 {
+        stroke-linecap: round;
+      }
+
+      .uuid-eaa927ae-b45d-4e54-8dfe-4a54e77e3489, .uuid-53d98b7d-74ea-4ecf-bc86-e809ae7c054a {
+        stroke-width: 3px;
+      }
+
+      .uuid-eaa927ae-b45d-4e54-8dfe-4a54e77e3489, .uuid-53d98b7d-74ea-4ecf-bc86-e809ae7c054a, .uuid-b9c22250-dda2-49ec-a0f6-92bd661dd583 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="uuid-478f013e-4c91-421d-8b89-77fdaa78a09b" data-name="Design">
+    <g id="uuid-2a71724d-8e2a-4332-917f-0bb433c0bb38" data-name="接駁車 Icon">
+      <rect id="uuid-6680c6de-0db1-4de5-9718-9fc223d0c841" data-name="接駁車 Icon" class="uuid-b9c22250-dda2-49ec-a0f6-92bd661dd583" x=".5" y=".5" width="40" height="40" rx="4.49" ry="4.49"/>
+      <g>
+        <rect class="uuid-53d98b7d-74ea-4ecf-bc86-e809ae7c054a" x="8.85" y="7.67" width="23.3" height="21.95" rx="2.37" ry="2.37"/>
+        <line class="uuid-53d98b7d-74ea-4ecf-bc86-e809ae7c054a" x1="8.85" y1="19.15" x2="32.15" y2="19.15"/>
+        <g>
+          <line class="uuid-eaa927ae-b45d-4e54-8dfe-4a54e77e3489" x1="11.94" y1="30.56" x2="11.94" y2="33.33"/>
+          <line class="uuid-eaa927ae-b45d-4e54-8dfe-4a54e77e3489" x1="29.06" y1="30.56" x2="29.06" y2="33.33"/>
+        </g>
+        <g>
+          <circle cx="15.16" cy="24.59" r="1.78"/>
+          <circle cx="25.84" cy="24.59" r="1.78"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+//雙館響應
+.sites{
+    a{
+        background-color: $-mainColor1;
+    }
+}
+.white-shdw-button:hover{
+    background: none !important;
+    box-shadow: none !important;
+    border: 1px solid #999;
+}

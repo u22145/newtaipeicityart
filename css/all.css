@@ -1,0 +1,6983 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "TaipeiSansTCBeta";
+  /* 定義你的字型名稱 */
+  src: local("fonts/SpaceGrotesk/TaipeiSansTCBeta"), url("TaipeiSansTCBeta.woff") format("woff"), url("TaipeiSansTCBeta.ttf") format("truetype");
+  /* 和 woff 至少要有一個 */
+}
+body {
+  line-height: 1.8;
+  color: #212121;
+  font-family: "TaipeiSansTCBeta", "微軟正黑體", sans-serif !important;
+}
+body.en {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+}
+body.en p,
+body.en a,
+body.en .h1,
+body.en h1,
+body.en .h2,
+body.en h2,
+body.en .h3,
+body.en h3,
+body.en .h4,
+body.en h4,
+body.en .h5,
+body.en h5,
+body.en .h6,
+body.en h6 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+}
+
+a,
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  color: #212121 !important;
+  font-family: "Space Grotesk", "TaipeiSansTCBeta", "微軟正黑體", sans-serif !important;
+}
+
+.ctn-preloader .animation-preloader {
+  transform: scale(0.8);
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: rgba(236, 255, 60, 0.15);
+}
+
+.ctn-preloader .animation-preloader .spinner {
+  border: 3px solid rgba(236, 255, 60, 0.15);
+  border-top-color: #ffed39;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  color: #ffed39;
+}
+
+.dpN {
+  display: none;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+  padding: 50px 0;
+}
+h2 span {
+  display: block;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.full-width-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.body .white-shdw-button:hover {
+  background: yellow;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.header .theme-menu-one {
+  background-color: yellow;
+}
+.header .theme-menu-one .logo {
+  position: inherit;
+}
+
+.ctn-preloader {
+  z-index: 9999;
+}
+
+.full-width-container {
+  margin-bottom: 100px;
+}
+
+.theme-menu-one .logo {
+  padding: 20px;
+}
+.theme-menu-one .logo a {
+  width: 100px;
+}
+
+.theme-menu-one.fixed,
+.theme-menu-two.fixed {
+  padding: 70px 0 0;
+  z-index: 9999;
+}
+
+.theme-menu-one .header-right-widget {
+  position: absolute;
+  top: 6px;
+  right: 60px;
+  z-index: 1;
+}
+
+.navbar .navbar-toggler {
+  color: #212121;
+}
+
+.theme-menu-one .header-right-widget .language-switcher button {
+  margin: 0;
+}
+
+.theme-menu-one .header-right-widget > ul > li {
+  margin-left: 30px;
+}
+.theme-menu-one .header-right-widget > ul > li a {
+  color: #212121;
+}
+.theme-menu-one .header-right-widget > ul > li img {
+  margin-top: 8px;
+}
+
+.navList {
+  display: none;
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navList.showNav {
+  display: flex;
+  height: calc(100vh - 65px);
+}
+.navList > div {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.navList li {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.1;
+}
+.navList li span {
+  font-size: 25px;
+}
+
+.modal {
+  z-index: 99999;
+  background-color: yellow;
+}
+
+.modal-content {
+  border: none;
+  background-color: yellow;
+}
+
+.modal-content button {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.modal-body li {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.modal-body li span {
+  font-size: 25px;
+}
+
+.theme-footer-one {
+  padding: 0;
+}
+
+.organizer {
+  background-color: #e2e2e2;
+  padding: 30px 20px;
+}
+.organizer > div {
+  margin: auto;
+}
+.organizer span {
+  margin-bottom: 15px;
+  padding: 0 10px;
+  font-size: 12px;
+  border: 1px solid #212121;
+  border-top: none;
+  border-bottom: none;
+}
+.organizer img {
+  padding-top: 8px;
+  max-height: 25px;
+  height: 100%;
+  margin-right: 25px;
+}
+.organizer .imgbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.organizer .imgbox img {
+  margin-bottom: 15px;
+}
+.organizer .items .item {
+  margin-right: 7px;
+}
+.organizer .items .item:last-child {
+  margin-bottom: 0;
+}
+.organizer .items .item:last-child img {
+  height: 27px;
+}
+.organizer .items .item img {
+  height: 35px;
+  max-height: 35px;
+}
+.organizer .item3 .item {
+  width: 360px;
+  margin-right: 0;
+}
+.organizer .item3 .item:last-child {
+  width: 350px;
+}
+.organizer .item3 img {
+  max-height: 40px;
+}
+.organizer .item3 .imgbox {
+  display: flex;
+}
+.organizer .item3 .imgbox img:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1550px) {
+  .theme-menu-one,
+  .theme-menu-three {
+    padding-top: 0;
+    max-height: 67px;
+    height: 67px;
+  }
+}
+@media (min-width: 992px) {
+  .theme-menu-one .header-right-widget > ul > li {
+    transition: all 0.3s;
+  }
+  .theme-menu-one .header-right-widget > ul > li:hover {
+    cursor: pointer;
+  }
+  .theme-menu-one .header-right-widget > ul > li:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 991px) {
+  .theme-menu-one .header-right-widget {
+    left: auto;
+    right: 20px;
+  }
+  .theme-menu-one .header-right-widget > ul > li {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  .socialMedia {
+    margin-top: 50px;
+  }
+  .socialMedia svg {
+    font-size: 1.5em;
+  }
+}
+.index {
+  padding-top: 65px;
+}
+.index img {
+  width: 100%;
+}
+
+.sites a {
+  background-color: yellow;
+}
+
+.white-shdw-button:hover {
+  background: none !important;
+  box-shadow: none !important;
+  border: 1px solid #999;
+}
+
+.information h6 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.information .notice strong {
+  display: block;
+  margin-bottom: 10px;
+}
+.information .contract a {
+  background-color: yellow;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.transportation .btn {
+  background-color: yellow;
+  color: #000000;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+.transportation .btn:hover {
+  color: #000000;
+}
+.transportation img {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+}
+.transportation img + span {
+  display: block;
+  margin: 8px 0 0 40px;
+}
+.transportation .item {
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
+}
+.transportation .item ol > li {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.transportation .item ol > li + li {
+  border-top: 1px dashed #999;
+}
+.transportation .item ol > li li {
+  margin-bottom: 12px;
+}
+
+.modal.operate {
+  background-color: rgba(0, 0, 0, 0);
+}
+.modal.operate a {
+  text-decoration: underline;
+}
+.modal.operate .modal-header {
+  padding: 10px;
+  justify-content: end;
+}
+.modal.operate .modal-header .btn-close {
+  margin-right: 0;
+}
+.modal.operate .modal-content {
+  background-color: #ffffff;
+}
+.modal.operate .modal-content button {
+  font-size: 25px;
+}
+.modal.operate ol {
+  font-size: 14px;
+}
+.modal.operate .modal-body li {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.modal.operate .modal-body li ul {
+  list-style-type: circle;
+  margin-left: 15px;
+}
+.modal.operate .modal-body li ul li {
+  position: relative;
+  padding-left: 70px;
+}
+.modal.operate .modal-body li ul li::before {
+  position: absolute;
+  left: 0;
+}
+.modal.operate .modal-body li ul li:nth-child(1)::before {
+  content: "接駁時間：";
+}
+.modal.operate .modal-body li ul li:nth-child(2)::before {
+  content: "搭乘地點：";
+}
+.modal.operate .modal-body li ul li:nth-child(3)::before {
+  content: "班距時間：";
+}
+.modal.operate .modal-body li ul li:nth-child(4) {
+  padding-left: 0;
+}
+.modal.operate .modal-body li ul li:nth-child(4)::before {
+  content: "";
+}
+
+.en .information .transportation .btn {
+  background-color: yellow;
+  color: #000000;
+}
+.en .modal.operate .modal-body li ul li {
+  position: relative;
+}
+.en .modal.operate .modal-body li ul li::before {
+  position: absolute;
+  left: 0;
+}
+.en .modal.operate .modal-body li ul li:nth-child(1) {
+  padding-left: 200px;
+}
+.en .modal.operate .modal-body li ul li:nth-child(1)::before {
+  content: "Shuttle bus operating hours:";
+}
+.en .modal.operate .modal-body li ul li:nth-child(2) {
+  padding-left: 190px;
+}
+.en .modal.operate .modal-body li ul li:nth-child(2)::before {
+  content: "Pick-up/drop-off locations: ";
+}
+.en .modal.operate .modal-body li ul li:nth-child(3) {
+  padding-left: 80px;
+}
+.en .modal.operate .modal-body li ul li:nth-child(3)::before {
+  content: " Frequency: ";
+}
+.en .modal.operate .modal-body li ul li:nth-child(4) {
+  padding-left: 0;
+}
+.en .modal.operate .modal-body li ul li:nth-child(4)::before {
+  content: "";
+}
+
+.itemOrange {
+  background-color: #ffdbb3;
+}
+.itemOrange a {
+  border: 1px solid #f08000;
+  background-color: #fff3e6;
+  color: #bd6500 !important;
+}
+.itemOrange a strong {
+  background-color: #f08000;
+}
+.itemOrange > div:first-child {
+  background-color: #f08000;
+}
+
+.itemGreen {
+  background-color: #b9ecdd;
+}
+.itemGreen a {
+  border: 1px solid #30b38d;
+  background-color: #e1f7f1;
+  color: #258b6d !important;
+}
+.itemGreen a strong {
+  background-color: #30b38d;
+}
+.itemGreen > div:first-child {
+  background-color: #30b38d;
+}
+
+.itemPeach {
+  background-color: #fbdbeb;
+}
+.itemPeach a {
+  border: 1px solid #e62e8b;
+  background-color: white;
+  color: #c91871 !important;
+}
+.itemPeach a strong {
+  background-color: #e62e8b;
+}
+.itemPeach > div:first-child {
+  background-color: #e62e8b;
+}
+
+.titleDate img {
+  max-width: 140px;
+}
+
+.pricing-app .pricing-tab-menu .nav-tabs .nav-item .nav-link {
+  padding: 15px 20px 0 20px;
+  border-radius: 20px 20px 0 0;
+  width: 185px;
+  text-align: center;
+}
+.pricing-app .pricing-tab-menu .nav-tabs .nav-item .nav-link.active {
+  background: yellow;
+}
+
+@media screen and (min-width: 989px) and (max-width: 5000px) {
+  .pricing-app .pricing-tab-menu .nav-tabs .nav-item .nav-link:hover {
+    opacity: 0.6;
+  }
+}
+.tab-content .tab-pane {
+  padding: 30px 0 !important;
+  background-color: yellow;
+}
+
+.program .grid_container {
+  display: flex;
+}
+
+.place {
+  padding-left: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.place span {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.br {
+  border-right: 1px solid yellow;
+}
+
+.bl {
+  border-left: 1px solid yellow;
+}
+
+.bb {
+  border-bottom: 1px solid yellow;
+}
+
+.gridTime {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+}
+.gridTime img {
+  width: 80%;
+}
+.gridTime .writing {
+  transform: rotate(90deg);
+}
+.gridTime > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px;
+  font-weight: 700;
+  background-color: #ffff33;
+}
+
+.gridTime {
+  min-width: 65px;
+  max-width: 110px;
+  width: 7%;
+}
+
+.taipei {
+  width: 70%;
+  min-width: 905px;
+  background-image: url("../images/program/bg1.png");
+  background-size: 25%;
+}
+
+.yingge {
+  min-width: 325px;
+  width: 30%;
+  grid-template-columns: 100%;
+  background-image: url("../images/program/bg2.png");
+  background-size: 25%;
+}
+
+.gridContentBox {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.gridContent {
+  display: grid;
+  grid-template-rows: 100px 1320px;
+  text-align: center;
+}
+.gridContent > div {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+}
+.gridContent .rs1 {
+  grid-row-start: 1;
+}
+.gridContent .re1 {
+  grid-row-end: 1;
+}
+.gridContent .rs2 {
+  grid-row-start: 2;
+}
+.gridContent .re2 {
+  grid-row-end: 2;
+}
+.gridContent .rs3 {
+  grid-row-start: 3;
+}
+.gridContent .re3 {
+  grid-row-end: 3;
+}
+.gridContent .rs4 {
+  grid-row-start: 4;
+}
+.gridContent .re4 {
+  grid-row-end: 4;
+}
+.gridContent .rs5 {
+  grid-row-start: 5;
+}
+.gridContent .re5 {
+  grid-row-end: 5;
+}
+.gridContent .rs6 {
+  grid-row-start: 6;
+}
+.gridContent .re6 {
+  grid-row-end: 6;
+}
+.gridContent .rs7 {
+  grid-row-start: 7;
+}
+.gridContent .re7 {
+  grid-row-end: 7;
+}
+.gridContent .rs8 {
+  grid-row-start: 8;
+}
+.gridContent .re8 {
+  grid-row-end: 8;
+}
+.gridContent .rs9 {
+  grid-row-start: 9;
+}
+.gridContent .re9 {
+  grid-row-end: 9;
+}
+.gridContent .rs10 {
+  grid-row-start: 10;
+}
+.gridContent .re10 {
+  grid-row-end: 10;
+}
+.gridContent .rs11 {
+  grid-row-start: 11;
+}
+.gridContent .re11 {
+  grid-row-end: 11;
+}
+.gridContent .rs12 {
+  grid-row-start: 12;
+}
+.gridContent .re12 {
+  grid-row-end: 12;
+}
+.gridContent .rs13 {
+  grid-row-start: 13;
+}
+.gridContent .re13 {
+  grid-row-end: 13;
+}
+.gridContent .rs14 {
+  grid-row-start: 14;
+}
+.gridContent .re14 {
+  grid-row-end: 14;
+}
+.gridContent .rs15 {
+  grid-row-start: 15;
+}
+.gridContent .re15 {
+  grid-row-end: 15;
+}
+.gridContent .cs1 {
+  grid-column-start: 1;
+}
+.gridContent .ce1 {
+  grid-column-end: 1;
+}
+.gridContent .cs2 {
+  grid-column-start: 2;
+}
+.gridContent .ce2 {
+  grid-column-end: 2;
+}
+.gridContent .cs3 {
+  grid-column-start: 3;
+}
+.gridContent .ce3 {
+  grid-column-end: 3;
+}
+.gridContent .cs4 {
+  grid-column-start: 4;
+}
+.gridContent .ce4 {
+  grid-column-end: 4;
+}
+.gridContent .cs5 {
+  grid-column-start: 5;
+}
+.gridContent .ce5 {
+  grid-column-end: 5;
+}
+.gridContent .cs6 {
+  grid-column-start: 6;
+}
+.gridContent .ce6 {
+  grid-column-end: 6;
+}
+.gridContent .cs7 {
+  grid-column-start: 7;
+}
+.gridContent .ce7 {
+  grid-column-end: 7;
+}
+.gridContent .cs8 {
+  grid-column-start: 8;
+}
+.gridContent .ce8 {
+  grid-column-end: 8;
+}
+.gridContent .cs9 {
+  grid-column-start: 9;
+}
+.gridContent .ce9 {
+  grid-column-end: 9;
+}
+.gridContent .cs10 {
+  grid-column-start: 10;
+}
+.gridContent .ce10 {
+  grid-column-end: 10;
+}
+.gridContent .cs11 {
+  grid-column-start: 11;
+}
+.gridContent .ce11 {
+  grid-column-end: 11;
+}
+.gridContent .cs12 {
+  grid-column-start: 12;
+}
+.gridContent .ce12 {
+  grid-column-end: 12;
+}
+.gridContent .cs13 {
+  grid-column-start: 13;
+}
+.gridContent .ce13 {
+  grid-column-end: 13;
+}
+.gridContent .cs14 {
+  grid-column-start: 14;
+}
+.gridContent .ce14 {
+  grid-column-end: 14;
+}
+.gridContent .cs15 {
+  grid-column-start: 15;
+}
+.gridContent .ce15 {
+  grid-column-end: 15;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+}
+.columns > div:first-child {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid yellow;
+}
+.columns > div:first-child span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.columns a {
+  border-left-width: 5px !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 700;
+}
+.columns a strong {
+  font-size: 12px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  padding: 2px 5px;
+  line-height: 1.7;
+  border-radius: 50%;
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+}
+.columns a span {
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 200;
+}
+.columns .s1 {
+  grid-row-start: 1;
+}
+.columns .e1 {
+  grid-row-end: 1;
+}
+.columns .s2 {
+  grid-row-start: 2;
+}
+.columns .e2 {
+  grid-row-end: 2;
+}
+.columns .s3 {
+  grid-row-start: 3;
+}
+.columns .e3 {
+  grid-row-end: 3;
+}
+.columns .s4 {
+  grid-row-start: 4;
+}
+.columns .e4 {
+  grid-row-end: 4;
+}
+.columns .s5 {
+  grid-row-start: 5;
+}
+.columns .e5 {
+  grid-row-end: 5;
+}
+.columns .s6 {
+  grid-row-start: 6;
+}
+.columns .e6 {
+  grid-row-end: 6;
+}
+.columns .s7 {
+  grid-row-start: 7;
+}
+.columns .e7 {
+  grid-row-end: 7;
+}
+.columns .s8 {
+  grid-row-start: 8;
+}
+.columns .e8 {
+  grid-row-end: 8;
+}
+.columns .s9 {
+  grid-row-start: 9;
+}
+.columns .e9 {
+  grid-row-end: 9;
+}
+.columns .s10 {
+  grid-row-start: 10;
+}
+.columns .e10 {
+  grid-row-end: 10;
+}
+.columns .s11 {
+  grid-row-start: 11;
+}
+.columns .e11 {
+  grid-row-end: 11;
+}
+.columns .s12 {
+  grid-row-start: 12;
+}
+.columns .e12 {
+  grid-row-end: 12;
+}
+.columns .s13 {
+  grid-row-start: 13;
+}
+.columns .e13 {
+  grid-row-end: 13;
+}
+.columns .s14 {
+  grid-row-start: 14;
+}
+.columns .e14 {
+  grid-row-end: 14;
+}
+.columns .s15 {
+  grid-row-start: 15;
+}
+.columns .e15 {
+  grid-row-end: 15;
+}
+.columns .GreenBox {
+  display: grid;
+  grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px 110px;
+}
+.columns .GreenBox .GreenL {
+  grid-column: 1/auto;
+}
+.columns .GreenBox .GreenR {
+  grid-column: 2/auto;
+}
+
+.itemTow {
+  position: relative;
+}
+.itemTow .itemIn {
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 110px;
+}
+.itemTow .itemIn.B0 {
+  bottom: 0;
+}
+.itemTow .itemIn.T100 {
+  top: 70px;
+}
+.itemTow .itemIn.T500 {
+  top: 510px;
+}
+
+.itemT1 {
+  position: relative;
+  top: 10px;
+}
+
+.itemT2 {
+  position: relative;
+  top: 20px;
+}
+
+.itemT3 {
+  position: relative;
+  top: 30px;
+}
+
+.itemT4 {
+  position: relative;
+  top: 40px;
+}
+
+.itemT5 {
+  position: relative;
+  top: 50px;
+}
+
+.mt1 {
+  margin-top: 10px;
+}
+
+.mt2 {
+  margin-top: 20px;
+}
+
+.mt3 {
+  margin-top: 30px;
+}
+
+.mt4 {
+  margin-top: 40px;
+}
+
+.mt5 {
+  margin-top: 50px;
+}
+
+.mt6 {
+  margin-top: 60px;
+}
+
+.column3-1 {
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.column3-2 {
+  grid-template-columns: 20% 20% 20% 40%;
+}
+
+.column2-2 {
+  grid-template-columns: 25% 25% 50%;
+}
+
+.column1 {
+  grid-template-columns: 100%;
+}
+
+.column2 {
+  grid-template-columns: 50% 50%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1865px) {
+  .wBig {
+    position: relative;
+    left: -50%;
+    width: 150%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  .pricing-tab-menu .nav-tabs .nav-item {
+    display: flex;
+    justify-content: center;
+  }
+  .pricing-app .pricing-tab-menu .nav-tabs .nav-item .nav-link {
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .pricing-app .pricing-tab-menu .nav-tabs .nav-item .nav-link {
+    width: 29.6vw;
+  }
+}
+.product-showcase .single-product-case .img-holder,
+.product-showcase .single-product-case {
+  margin-bottom: 10px;
+}
+
+.about-us-standard.agency-style .row:nth-child(even) .img-box img {
+  margin-top: 0;
+}
+
+.container div {
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.events > div {
+  margin-bottom: 40px;
+}
+.events .mapBox {
+  position: relative;
+}
+.events .mapBox .map_info {
+  right: 20px;
+  top: 0;
+  z-index: 960;
+}
+.events .mapBox .map_info .imgB {
+  padding: 0;
+}
+.events .img-holder img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  /* 額外確保圖片縮放時會有最好的效果 */
+  object-fit: cover;
+}
+.events .info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  line-height: 1.2;
+  position: relative;
+  margin-left: 50px;
+}
+.events .info img {
+  width: 50px;
+  margin-right: 10px;
+}
+.events .info a.product-name {
+  margin: 0;
+  min-height: 57.6px;
+}
+.events .info a.product-name span {
+  font-size: 15px;
+}
+.events .items > .row {
+  margin-bottom: 85px;
+}
+.events .items > .row .info::before {
+  color: #ffffff;
+}
+.events .items > .row h6 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(1) .info::before {
+  content: "01";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(2) .info::before {
+  content: "02";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(3) .info::before {
+  content: "03";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(4) .info::before {
+  content: "04";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(5) .info::before {
+  content: "05";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(6) .info::before {
+  content: "06";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(7) .info::before {
+  content: "07";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(8) .info::before {
+  content: "08";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(9) .info::before {
+  content: "09";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(10) .info::before {
+  content: "10";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(11) .info::before {
+  content: "11";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(12) .info::before {
+  content: "12";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(13) .info::before {
+  content: "13";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(14) .info::before {
+  content: "14";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(15) .info::before {
+  content: "15";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(16) .info::before {
+  content: "16";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(17) .info::before {
+  content: "17";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(18) .info::before {
+  content: "18";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(19) .info::before {
+  content: "19";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(20) .info::before {
+  content: "20";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(21) .info::before {
+  content: "21";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(22) .info::before {
+  content: "22";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(23) .info::before {
+  content: "23";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(24) .info::before {
+  content: "24";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(25) .info::before {
+  content: "25";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(26) .info::before {
+  content: "26";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(27) .info::before {
+  content: "27";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(28) .info::before {
+  content: "28";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(29) .info::before {
+  content: "29";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(30) .info::before {
+  content: "30";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(31) .info::before {
+  content: "31";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(32) .info::before {
+  content: "32";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(33) .info::before {
+  content: "33";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(34) .info::before {
+  content: "34";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(35) .info::before {
+  content: "35";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(36) .info::before {
+  content: "36";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(37) .info::before {
+  content: "37";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(38) .info::before {
+  content: "38";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(39) .info::before {
+  content: "39";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(40) .info::before {
+  content: "40";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(41) .info::before {
+  content: "41";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(42) .info::before {
+  content: "42";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(43) .info::before {
+  content: "43";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(44) .info::before {
+  content: "44";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(45) .info::before {
+  content: "45";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(46) .info::before {
+  content: "46";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(47) .info::before {
+  content: "47";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(48) .info::before {
+  content: "48";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(49) .info::before {
+  content: "49";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(50) .info::before {
+  content: "50";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(51) .info::before {
+  content: "51";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(52) .info::before {
+  content: "52";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(53) .info::before {
+  content: "53";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(54) .info::before {
+  content: "54";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(55) .info::before {
+  content: "55";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(56) .info::before {
+  content: "56";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(57) .info::before {
+  content: "57";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(58) .info::before {
+  content: "58";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(59) .info::before {
+  content: "59";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(60) .info::before {
+  content: "60";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(61) .info::before {
+  content: "61";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(62) .info::before {
+  content: "62";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(63) .info::before {
+  content: "63";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(64) .info::before {
+  content: "64";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(65) .info::before {
+  content: "65";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(66) .info::before {
+  content: "66";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(67) .info::before {
+  content: "67";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(68) .info::before {
+  content: "68";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(69) .info::before {
+  content: "69";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(70) .info::before {
+  content: "70";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(71) .info::before {
+  content: "71";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(72) .info::before {
+  content: "72";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(73) .info::before {
+  content: "73";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(74) .info::before {
+  content: "74";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(75) .info::before {
+  content: "75";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(76) .info::before {
+  content: "76";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(77) .info::before {
+  content: "77";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(78) .info::before {
+  content: "78";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(79) .info::before {
+  content: "79";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(80) .info::before {
+  content: "80";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(81) .info::before {
+  content: "81";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(82) .info::before {
+  content: "82";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(83) .info::before {
+  content: "83";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(84) .info::before {
+  content: "84";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(85) .info::before {
+  content: "85";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(86) .info::before {
+  content: "86";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(87) .info::before {
+  content: "87";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(88) .info::before {
+  content: "88";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(89) .info::before {
+  content: "89";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(90) .info::before {
+  content: "90";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(91) .info::before {
+  content: "91";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(92) .info::before {
+  content: "92";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(93) .info::before {
+  content: "93";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(94) .info::before {
+  content: "94";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(95) .info::before {
+  content: "95";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(96) .info::before {
+  content: "96";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(97) .info::before {
+  content: "97";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(98) .info::before {
+  content: "98";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row:nth-child(1) .item:nth-of-type(99) .info::before {
+  content: "99";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff00b9;
+}
+.events .items > .row {
+  margin-bottom: 85px;
+}
+.events .items > .row .info::before {
+  color: #ffffff;
+}
+.events .items > .row h6 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(1) .info::before {
+  content: "01";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(2) .info::before {
+  content: "02";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(3) .info::before {
+  content: "03";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(4) .info::before {
+  content: "04";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(5) .info::before {
+  content: "05";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(6) .info::before {
+  content: "06";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(7) .info::before {
+  content: "07";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(8) .info::before {
+  content: "08";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(9) .info::before {
+  content: "09";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(10) .info::before {
+  content: "10";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(11) .info::before {
+  content: "11";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(12) .info::before {
+  content: "12";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(13) .info::before {
+  content: "13";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(14) .info::before {
+  content: "14";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(15) .info::before {
+  content: "15";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(16) .info::before {
+  content: "16";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(17) .info::before {
+  content: "17";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(18) .info::before {
+  content: "18";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(19) .info::before {
+  content: "19";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(20) .info::before {
+  content: "20";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(21) .info::before {
+  content: "21";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(22) .info::before {
+  content: "22";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(23) .info::before {
+  content: "23";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(24) .info::before {
+  content: "24";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(25) .info::before {
+  content: "25";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(26) .info::before {
+  content: "26";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(27) .info::before {
+  content: "27";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(28) .info::before {
+  content: "28";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(29) .info::before {
+  content: "29";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(30) .info::before {
+  content: "30";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(31) .info::before {
+  content: "31";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(32) .info::before {
+  content: "32";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(33) .info::before {
+  content: "33";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(34) .info::before {
+  content: "34";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(35) .info::before {
+  content: "35";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(36) .info::before {
+  content: "36";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(37) .info::before {
+  content: "37";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(38) .info::before {
+  content: "38";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(39) .info::before {
+  content: "39";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(40) .info::before {
+  content: "40";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(41) .info::before {
+  content: "41";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(42) .info::before {
+  content: "42";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(43) .info::before {
+  content: "43";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(44) .info::before {
+  content: "44";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(45) .info::before {
+  content: "45";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(46) .info::before {
+  content: "46";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(47) .info::before {
+  content: "47";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(48) .info::before {
+  content: "48";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(49) .info::before {
+  content: "49";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(50) .info::before {
+  content: "50";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(51) .info::before {
+  content: "51";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(52) .info::before {
+  content: "52";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(53) .info::before {
+  content: "53";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(54) .info::before {
+  content: "54";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(55) .info::before {
+  content: "55";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(56) .info::before {
+  content: "56";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(57) .info::before {
+  content: "57";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(58) .info::before {
+  content: "58";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(59) .info::before {
+  content: "59";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(60) .info::before {
+  content: "60";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(61) .info::before {
+  content: "61";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(62) .info::before {
+  content: "62";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(63) .info::before {
+  content: "63";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(64) .info::before {
+  content: "64";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(65) .info::before {
+  content: "65";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(66) .info::before {
+  content: "66";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(67) .info::before {
+  content: "67";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(68) .info::before {
+  content: "68";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(69) .info::before {
+  content: "69";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(70) .info::before {
+  content: "70";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(71) .info::before {
+  content: "71";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(72) .info::before {
+  content: "72";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(73) .info::before {
+  content: "73";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(74) .info::before {
+  content: "74";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(75) .info::before {
+  content: "75";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(76) .info::before {
+  content: "76";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(77) .info::before {
+  content: "77";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(78) .info::before {
+  content: "78";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(79) .info::before {
+  content: "79";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(80) .info::before {
+  content: "80";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(81) .info::before {
+  content: "81";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(82) .info::before {
+  content: "82";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(83) .info::before {
+  content: "83";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(84) .info::before {
+  content: "84";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(85) .info::before {
+  content: "85";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(86) .info::before {
+  content: "86";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(87) .info::before {
+  content: "87";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(88) .info::before {
+  content: "88";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(89) .info::before {
+  content: "89";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(90) .info::before {
+  content: "90";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(91) .info::before {
+  content: "91";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(92) .info::before {
+  content: "92";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(93) .info::before {
+  content: "93";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(94) .info::before {
+  content: "94";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(95) .info::before {
+  content: "95";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(96) .info::before {
+  content: "96";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(97) .info::before {
+  content: "97";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(98) .info::before {
+  content: "98";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row:nth-child(2) .item:nth-of-type(99) .info::before {
+  content: "99";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #ff7800;
+}
+.events .items > .row {
+  margin-bottom: 85px;
+}
+.events .items > .row .info::before {
+  color: #ffffff;
+}
+.events .items > .row h6 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(1) .info::before {
+  content: "01";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(2) .info::before {
+  content: "02";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(3) .info::before {
+  content: "03";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(4) .info::before {
+  content: "04";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(5) .info::before {
+  content: "05";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(6) .info::before {
+  content: "06";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(7) .info::before {
+  content: "07";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(8) .info::before {
+  content: "08";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(9) .info::before {
+  content: "09";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(10) .info::before {
+  content: "10";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(11) .info::before {
+  content: "11";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(12) .info::before {
+  content: "12";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(13) .info::before {
+  content: "13";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(14) .info::before {
+  content: "14";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(15) .info::before {
+  content: "15";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(16) .info::before {
+  content: "16";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(17) .info::before {
+  content: "17";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(18) .info::before {
+  content: "18";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(19) .info::before {
+  content: "19";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(20) .info::before {
+  content: "20";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(21) .info::before {
+  content: "21";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(22) .info::before {
+  content: "22";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(23) .info::before {
+  content: "23";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(24) .info::before {
+  content: "24";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(25) .info::before {
+  content: "25";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(26) .info::before {
+  content: "26";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(27) .info::before {
+  content: "27";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(28) .info::before {
+  content: "28";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(29) .info::before {
+  content: "29";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(30) .info::before {
+  content: "30";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(31) .info::before {
+  content: "31";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(32) .info::before {
+  content: "32";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(33) .info::before {
+  content: "33";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(34) .info::before {
+  content: "34";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(35) .info::before {
+  content: "35";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(36) .info::before {
+  content: "36";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(37) .info::before {
+  content: "37";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(38) .info::before {
+  content: "38";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(39) .info::before {
+  content: "39";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(40) .info::before {
+  content: "40";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(41) .info::before {
+  content: "41";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(42) .info::before {
+  content: "42";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(43) .info::before {
+  content: "43";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(44) .info::before {
+  content: "44";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(45) .info::before {
+  content: "45";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(46) .info::before {
+  content: "46";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(47) .info::before {
+  content: "47";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(48) .info::before {
+  content: "48";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(49) .info::before {
+  content: "49";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(50) .info::before {
+  content: "50";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(51) .info::before {
+  content: "51";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(52) .info::before {
+  content: "52";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(53) .info::before {
+  content: "53";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(54) .info::before {
+  content: "54";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(55) .info::before {
+  content: "55";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(56) .info::before {
+  content: "56";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(57) .info::before {
+  content: "57";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(58) .info::before {
+  content: "58";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(59) .info::before {
+  content: "59";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(60) .info::before {
+  content: "60";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(61) .info::before {
+  content: "61";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(62) .info::before {
+  content: "62";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(63) .info::before {
+  content: "63";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(64) .info::before {
+  content: "64";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(65) .info::before {
+  content: "65";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(66) .info::before {
+  content: "66";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(67) .info::before {
+  content: "67";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(68) .info::before {
+  content: "68";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(69) .info::before {
+  content: "69";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(70) .info::before {
+  content: "70";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(71) .info::before {
+  content: "71";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(72) .info::before {
+  content: "72";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(73) .info::before {
+  content: "73";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(74) .info::before {
+  content: "74";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(75) .info::before {
+  content: "75";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(76) .info::before {
+  content: "76";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(77) .info::before {
+  content: "77";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(78) .info::before {
+  content: "78";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(79) .info::before {
+  content: "79";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(80) .info::before {
+  content: "80";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(81) .info::before {
+  content: "81";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(82) .info::before {
+  content: "82";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(83) .info::before {
+  content: "83";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(84) .info::before {
+  content: "84";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(85) .info::before {
+  content: "85";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(86) .info::before {
+  content: "86";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(87) .info::before {
+  content: "87";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(88) .info::before {
+  content: "88";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(89) .info::before {
+  content: "89";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(90) .info::before {
+  content: "90";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(91) .info::before {
+  content: "91";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(92) .info::before {
+  content: "92";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(93) .info::before {
+  content: "93";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(94) .info::before {
+  content: "94";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(95) .info::before {
+  content: "95";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(96) .info::before {
+  content: "96";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(97) .info::before {
+  content: "97";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(98) .info::before {
+  content: "98";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row:nth-child(3) .item:nth-of-type(99) .info::before {
+  content: "99";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #2ddc73;
+}
+.events .items > .row {
+  margin-bottom: 85px;
+}
+.events .items > .row .info::before {
+  color: #ffffff;
+}
+.events .items > .row h6 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(1) .info::before {
+  content: "01";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(2) .info::before {
+  content: "02";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(3) .info::before {
+  content: "03";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(4) .info::before {
+  content: "04";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(5) .info::before {
+  content: "05";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(6) .info::before {
+  content: "06";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(7) .info::before {
+  content: "07";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(8) .info::before {
+  content: "08";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(9) .info::before {
+  content: "09";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(10) .info::before {
+  content: "10";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(11) .info::before {
+  content: "11";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(12) .info::before {
+  content: "12";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(13) .info::before {
+  content: "13";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(14) .info::before {
+  content: "14";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(15) .info::before {
+  content: "15";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(16) .info::before {
+  content: "16";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(17) .info::before {
+  content: "17";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(18) .info::before {
+  content: "18";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(19) .info::before {
+  content: "19";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(20) .info::before {
+  content: "20";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(21) .info::before {
+  content: "21";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(22) .info::before {
+  content: "22";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(23) .info::before {
+  content: "23";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(24) .info::before {
+  content: "24";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(25) .info::before {
+  content: "25";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(26) .info::before {
+  content: "26";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(27) .info::before {
+  content: "27";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(28) .info::before {
+  content: "28";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(29) .info::before {
+  content: "29";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(30) .info::before {
+  content: "30";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(31) .info::before {
+  content: "31";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(32) .info::before {
+  content: "32";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(33) .info::before {
+  content: "33";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(34) .info::before {
+  content: "34";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(35) .info::before {
+  content: "35";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(36) .info::before {
+  content: "36";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(37) .info::before {
+  content: "37";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(38) .info::before {
+  content: "38";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(39) .info::before {
+  content: "39";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(40) .info::before {
+  content: "40";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(41) .info::before {
+  content: "41";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(42) .info::before {
+  content: "42";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(43) .info::before {
+  content: "43";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(44) .info::before {
+  content: "44";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(45) .info::before {
+  content: "45";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(46) .info::before {
+  content: "46";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(47) .info::before {
+  content: "47";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(48) .info::before {
+  content: "48";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(49) .info::before {
+  content: "49";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(50) .info::before {
+  content: "50";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(51) .info::before {
+  content: "51";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(52) .info::before {
+  content: "52";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(53) .info::before {
+  content: "53";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(54) .info::before {
+  content: "54";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(55) .info::before {
+  content: "55";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(56) .info::before {
+  content: "56";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(57) .info::before {
+  content: "57";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(58) .info::before {
+  content: "58";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(59) .info::before {
+  content: "59";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(60) .info::before {
+  content: "60";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(61) .info::before {
+  content: "61";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(62) .info::before {
+  content: "62";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(63) .info::before {
+  content: "63";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(64) .info::before {
+  content: "64";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(65) .info::before {
+  content: "65";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(66) .info::before {
+  content: "66";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(67) .info::before {
+  content: "67";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(68) .info::before {
+  content: "68";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(69) .info::before {
+  content: "69";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(70) .info::before {
+  content: "70";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(71) .info::before {
+  content: "71";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(72) .info::before {
+  content: "72";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(73) .info::before {
+  content: "73";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(74) .info::before {
+  content: "74";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(75) .info::before {
+  content: "75";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(76) .info::before {
+  content: "76";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(77) .info::before {
+  content: "77";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(78) .info::before {
+  content: "78";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(79) .info::before {
+  content: "79";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(80) .info::before {
+  content: "80";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(81) .info::before {
+  content: "81";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(82) .info::before {
+  content: "82";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(83) .info::before {
+  content: "83";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(84) .info::before {
+  content: "84";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(85) .info::before {
+  content: "85";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(86) .info::before {
+  content: "86";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(87) .info::before {
+  content: "87";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(88) .info::before {
+  content: "88";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(89) .info::before {
+  content: "89";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(90) .info::before {
+  content: "90";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(91) .info::before {
+  content: "91";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(92) .info::before {
+  content: "92";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(93) .info::before {
+  content: "93";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(94) .info::before {
+  content: "94";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(95) .info::before {
+  content: "95";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(96) .info::before {
+  content: "96";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(97) .info::before {
+  content: "97";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(98) .info::before {
+  content: "98";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items > .row:nth-child(4) .item:nth-of-type(99) .info::before {
+  content: "99";
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-color: #0050f0;
+}
+.events .items .contract.row .item .info span {
+  position: relative;
+  display: block;
+  line-height: 1.8;
+}
+.events .items .contract.row .item .info span::before {
+  position: absolute;
+  left: 0;
+}
+.events .items .contract.row .item .info span:nth-child(1) {
+  padding-left: 60px;
+}
+.events .items .contract.row .item .info span:nth-child(1)::before {
+  content: "哪裡找｜";
+}
+.events .items .contract.row .item .info span:nth-child(2) {
+  padding-left: 75px;
+}
+.events .items .contract.row .item .info span:nth-child(2)::before {
+  content: "活動優惠｜";
+}
+.events .items .contract.row .item .info ol {
+  padding-left: 20px;
+}
+.events .items .contract.row .item .info::before {
+  background-color: yellow !important;
+  color: #212121;
+}
+
+.en .events .items .contract.row .item .info span:nth-child(1) {
+  padding-left: 80px;
+}
+.en .events .items .contract.row .item .info span:nth-child(1)::before {
+  content: "Location｜";
+}
+.en .events .items .contract.row .item .info span:nth-child(2) {
+  padding-left: 110px;
+}
+.en .events .items .contract.row .item .info span:nth-child(2)::before {
+  content: "Activity offer｜";
+}
+
+#map {
+  height: 85vh;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 5000px) {
+  .map_info {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 1199px) {
+  .map_info .imgB {
+    padding: 0 12px !important;
+  }
+  .map_info .imgB + .imgB {
+    margin-top: -15px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+  #map {
+    height: 300px;
+  }
+}
+.nextBt {
+  text-align: right;
+}
+.nextBt a {
+  background-color: yellow;
+}
+
+.performanceItem .explanatoryBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.performanceItem .explanatoryBox > p {
+  padding: 0 !important;
+}
+.performanceItem .explanatoryBox > p:nth-child(odd) {
+  width: 90px;
+}
+.performanceItem .explanatoryBox > p:nth-child(even) {
+  width: calc(100% - 90px);
+}
+
+.eventItem {
+  font-size: 18px;
+  line-height: 32px;
+}
+.eventItem .explanatoryBox div {
+  color: #798598;
+}
+.eventItem > .row:first-child .block-title {
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: 60px;
+  padding-top: 10px;
+}
+.eventItem > .row:first-child .block-title span {
+  font-variant-numeric: tabular-nums;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  color: #ffffff;
+}
+
+.explanatoryBox > div, .explanatoryBox > div::before {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-variant-numeric: tabular-nums;
+}
+.explanatoryBox > div {
+  position: relative;
+}
+.explanatoryBox > div::before {
+  position: absolute;
+}
+
+.vision .block-title span {
+  background-color: #ff00b9;
+}
+.vision .explanatoryBox div {
+  margin-left: 90px;
+}
+.vision .explanatoryBox div::before {
+  left: -90px;
+}
+.vision .explanatoryBox div:nth-child(1)::before {
+  content: "作品位置｜";
+}
+.vision .explanatoryBox div:nth-child(2)::before {
+  content: "作品形式｜";
+}
+.vision .explanatoryBox div:nth-child(3)::before {
+  content: "作品媒材｜";
+}
+.vision .explanatoryBox div:nth-child(4) {
+  margin-left: 60px;
+}
+.vision .explanatoryBox div:nth-child(4)::before {
+  left: -60px;
+  content: "尺寸｜";
+}
+.vision.en .explanatoryBox div {
+  margin-left: 103px;
+}
+.vision.en .explanatoryBox div::before {
+  left: -103px;
+}
+.vision.en .explanatoryBox div:nth-child(1)::before {
+  content: "LOCATION｜";
+}
+.vision.en .explanatoryBox div:nth-child(2) {
+  margin-left: 135px;
+}
+.vision.en .explanatoryBox div:nth-child(2)::before {
+  left: -135px;
+  content: "DESCRIPTION｜";
+}
+.vision.en .explanatoryBox div:nth-child(3) {
+  margin-left: 100px;
+}
+.vision.en .explanatoryBox div:nth-child(3)::before {
+  left: -100px;
+  content: "MEDIUM｜";
+}
+.vision.en .explanatoryBox div:nth-child(4)::before {
+  content: "L x W x H｜";
+}
+
+.performanceItem .block-title span {
+  background-color: #ff7800;
+}
+.performanceItem .explanatoryBox div {
+  margin-left: 90px;
+}
+.performanceItem .explanatoryBox div::before {
+  left: -90px;
+}
+.performanceItem .explanatoryBox div:nth-child(1)::before {
+  content: "演出形式｜";
+}
+.performanceItem .explanatoryBox div:nth-child(2)::before {
+  content: "演出地點｜";
+}
+.performanceItem .explanatoryBox div:nth-child(3)::before {
+  content: "演出時間｜";
+}
+.performanceItem.en .explanatoryBox div {
+  margin-left: 103px;
+}
+.performanceItem.en .explanatoryBox div::before {
+  left: -103px;
+}
+.performanceItem.en .explanatoryBox div:nth-child(1) {
+  margin-left: 60px;
+}
+.performanceItem.en .explanatoryBox div:nth-child(1)::before {
+  content: "TYPE｜";
+  left: -60px;
+}
+.performanceItem.en .explanatoryBox div:nth-child(2)::before {
+  content: "LOCATION｜";
+}
+.performanceItem.en .explanatoryBox div:nth-child(3)::before {
+  content: "DATETIME｜";
+}
+
+.special .block-title span {
+  background-color: #2ddc73;
+}
+.special.en .explanatoryBox div {
+  margin-left: 103px;
+}
+.special.en .explanatoryBox div::before {
+  left: -103px;
+}
+.special.en .explanatoryBox div:nth-child(1)::before {
+  content: "LOCATION｜";
+}
+.special.en .explanatoryBox div:nth-child(2)::before {
+  content: "DATETIME｜";
+}
+.special .explanatoryBox div {
+  margin-left: 55px;
+}
+.special .explanatoryBox div::before {
+  left: -55px;
+}
+.special .explanatoryBox div:nth-child(1)::before {
+  content: "地點｜";
+}
+.special .explanatoryBox div:nth-child(2)::before {
+  content: "時間｜";
+}
+
+.sports .block-title span {
+  background-color: #0050f0;
+}
+.sports a {
+  background-color: yellow;
+}
+.sports.en .explanatoryBox div {
+  margin-left: 110px;
+}
+.sports.en .explanatoryBox div::before {
+  left: -110px;
+}
+.sports.en .explanatoryBox div:nth-child(1)::before {
+  content: "LOCATION｜";
+}
+.sports.en .explanatoryBox div:nth-child(2)::before {
+  content: "DATETIME｜";
+}
+.sports .explanatoryBox div {
+  margin-left: 55px;
+}
+.sports .explanatoryBox div::before {
+  left: -55px;
+}
+.sports .explanatoryBox div:nth-child(1)::before {
+  content: "地點｜";
+}
+.sports .explanatoryBox div:nth-child(2)::before {
+  content: "時間｜";
+}

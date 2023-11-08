@@ -1,0 +1,217 @@
+//活動總覽
+// .events .single-product-case a {
+//   cursor: default;
+// }
+
+// .product-showcase .single-product-case .img-holder img {
+//   transform: none;
+// }
+
+.product-showcase .single-product-case .img-holder,
+.product-showcase .single-product-case {
+  margin-bottom: 10px;
+}
+
+.about-us-standard.agency-style .row:nth-child(even) .img-box img {
+  margin-top: 0;
+}
+
+.container div {
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.events {
+  >div {
+    margin-bottom: 40px;
+  }
+
+  .mapBox {
+    position: relative;
+
+    .map_info {
+      right: 20px;
+      top: 0;
+      z-index: 960;
+
+      .imgB {
+        padding: 0;
+      }
+    }
+  }
+
+  .img-holder img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* 額外確保圖片縮放時會有最好的效果 */
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 1.2;
+    position: relative;
+    margin-left: 50px;
+
+
+    img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    a.product-name {
+      margin: 0;
+      min-height: 57.6px;
+
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  // colorList:黃、桃色、橘色、綠色、藍色
+  $colorList: ($-mainColor2, $-mainColor6, $-mainColor4, $-mainColor3, );
+
+  .items {
+    @for $i from 1 through length($colorList) {
+
+      &>.row {
+        margin-bottom: 85px;
+
+        .info::before {
+          color: #ffffff;
+        }
+
+        h6 {
+          font-size: 25px;
+          font-weight: 800;
+        }
+      }
+
+      &>.row:nth-child(#{$i}) {
+        @for $j from 1 through 99 {
+          .item:nth-of-type(#{$j}) {
+            .info::before {
+              @if $j<10 {
+                content: "0#{$j}";
+                @include fontFamily();
+                // font-family: 'Space Grotesk', sans-serif;
+              }
+
+              @if $j>9 {
+                content: "#{$j}";
+                @include fontFamily();
+                // font-family: 'Space Grotesk', sans-serif;
+              }
+
+              font-size: 20px;
+              padding: 10px;
+              min-width: 40px;
+              max-height: 44px;
+              border-radius: 50%;
+              position: absolute;
+              left: -55px;
+              top: 0;
+              background-color: nth($colorList, $i);
+            }
+          }
+        }
+      }
+    }
+
+    // 特約店家區塊
+    .contract.row .item .info {
+      span {
+        position: relative;
+        display: block;
+        line-height: 1.8;
+
+        &::before {
+          position: absolute;
+          left: 0;
+        }
+
+        &:nth-child(1) {
+          padding-left: 60px;
+
+          &::before {
+            content: '哪裡找｜';
+          }
+        }
+
+        &:nth-child(2) {
+          padding-left: 75px;
+
+          &::before {
+            content: '活動優惠｜';
+          }
+        }
+      }
+
+      ol {
+        padding-left: 20px;
+      }
+
+      &::before {
+        background-color: $-mainColor1 !important;
+        color: $-mainColor5;
+      }
+    }
+  }
+}
+
+.en {
+  .events .items .contract.row .item .info span {
+    &:nth-child(1) {
+      padding-left: 80px;
+
+      &::before {
+        content: 'Location｜';
+      }
+    }
+
+    &:nth-child(2) {
+      padding-left: 110px;
+
+      &::before {
+        content: 'Activity offer｜';
+      }
+    }
+  }
+}
+
+#map {
+  height: 85vh;
+  // height: 600px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 5000px) {
+  .map_info {
+    position: absolute;
+
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 1199px) {
+  .map_info {
+    .imgB {
+      padding: 0 12px !important;
+
+      &+.imgB {
+        margin-top: -15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+  #map {
+    // height: 35vh;
+    height: 300px;
+  }
+}

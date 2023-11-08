@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-4f484efc-ce63-4c87-850b-620636fcb1a1" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .uuid-426fd84e-a764-4991-acc5-1c4fa12988b4 {
+        stroke-width: 4px;
+      }
+
+      .uuid-426fd84e-a764-4991-acc5-1c4fa12988b4, .uuid-d40d3e2b-195b-4719-9a42-a2af67f02fca {
+        stroke-miterlimit: 10;
+      }
+
+      .uuid-426fd84e-a764-4991-acc5-1c4fa12988b4, .uuid-d40d3e2b-195b-4719-9a42-a2af67f02fca, .uuid-45405355-63fd-4d5b-98aa-92a0719d26b7 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .uuid-426fd84e-a764-4991-acc5-1c4fa12988b4, .uuid-45405355-63fd-4d5b-98aa-92a0719d26b7 {
+        stroke-linecap: round;
+      }
+
+      .uuid-45405355-63fd-4d5b-98aa-92a0719d26b7 {
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="uuid-2ef24a0a-daf1-434c-a5fb-f67c1bd5ed8f" data-name="Design">
+    <g id="uuid-d1722292-6070-4aa1-806d-faa09a7c0bff" data-name="汽車 Icon">
+      <rect id="uuid-e8719907-41f7-4aa4-9140-be6fb15414c3" data-name="Icon" class="uuid-d40d3e2b-195b-4719-9a42-a2af67f02fca" x=".5" y=".5" width="40" height="40" rx="4.49" ry="4.49"/>
+      <g>
+        <path class="uuid-45405355-63fd-4d5b-98aa-92a0719d26b7" d="m29.01,8.34H12.07c-.9,0-1.69.6-1.93,1.47l-2.51,9.05c-.05.17-.07.35-.07.53v8.51c0,1.1.9,2,2,2h21.96c1.1,0,2-.9,2-2v-8.51c0-.18-.02-.36-.07-.53l-2.51-9.05c-.24-.87-1.03-1.47-1.93-1.47Z"/>
+        <g>
+          <line class="uuid-426fd84e-a764-4991-acc5-1c4fa12988b4" x1="10.2" y1="30.73" x2="10.2" y2="32.66"/>
+          <line class="uuid-426fd84e-a764-4991-acc5-1c4fa12988b4" x1="30.87" y1="30.73" x2="30.87" y2="32.66"/>
+        </g>
+        <circle cx="11.98" cy="24.79" r="1.78"/>
+        <circle cx="29.09" cy="24.79" r="1.78"/>
+        <line class="uuid-45405355-63fd-4d5b-98aa-92a0719d26b7" x1="7.56" y1="19.39" x2="33.52" y2="19.39"/>
+        <line class="uuid-45405355-63fd-4d5b-98aa-92a0719d26b7" x1="17.36" y1="24.79" x2="23.72" y2="24.79"/>
+        <line class="uuid-45405355-63fd-4d5b-98aa-92a0719d26b7" x1="33.44" y1="18.85" x2="36.3" y2="18.85"/>
+        <line class="uuid-45405355-63fd-4d5b-98aa-92a0719d26b7" x1="4.7" y1="18.85" x2="7.56" y2="18.85"/>
+      </g>
+    </g>
+  </g>
+</svg>

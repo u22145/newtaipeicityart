@@ -1,0 +1,62 @@
+<div class="theme-menu-one">
+    <div class="logo"><a href="index.html"><img src="../images/logo.svg" alt="新生地" width="100"></a></div>
+    <nav id="mega-menu-holder" class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+        </div> <!-- /.container -->
+    </nav> <!-- /#mega-menu-holder -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+
+    <div class="header-right-widget">
+        <ul>
+            <li class="language-switcher">
+                <a href="https://www.facebook.com/newartland/" target="_blank"> <img src="../images/menu-icon/fb.svg"
+                        alt="fb" width="20"></a>
+            </li>
+            <li class="language-switcher" id="seeBusiness">
+                <a href="javascript:void(0)"><img src="../images/menu-icon/ig@3x.png" alt="icon" width="20"></a>
+            </li>
+            <li class="language-switcher" id="changeLanguage">
+                <a href="javascript:void(0)">中文</a>
+            </li>
+
+            <li class="language-switcher">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="flaticon-setup"></i>
+                </button>
+            </li>
+        </ul>
+    </div> <!-- /.header-right-widget -->
+    <script>
+        // 開始------ 點擊顯示臉書Business 按鈕 
+        var businessBtn = document.getElementById('seeBusiness');
+        businessBtn.addEventListener('click', function () {
+            var dpNElement = document.querySelector(".dpN");
+            if (dpNElement) {
+                dpNElement.classList.remove("dpN");
+            }
+        });
+        // 結束------ 點擊顯示臉書Business 按鈕 
+        // 開始------ 點擊changeLanguage換語言
+        var currentUrl = window.location.href;
+        var button = document.getElementById('changeLanguage');
+        button.addEventListener('click', function () {
+            var hostUrl = window.location.host
+            var pathnameUrl = window.location.pathname
+            var hulkUrl = '/a23_newtaipeicityart/'
+            if (currentUrl.indexOf('/en/') === -1) {
+                var englishUrl = '/en' + pathnameUrl;
+                if (currentUrl.indexOf(hulkUrl) != -1) {
+                    pathnameUrl = pathnameUrl.replace(hulkUrl, '');
+                    englishUrl = hulkUrl + 'en/' + pathnameUrl;
+                }
+                window.location.href = englishUrl;
+            } else {
+                var chineseUrl = pathnameUrl.replace('/en/', '/');
+                window.location.href = chineseUrl;
+            }
+        });
+        // 結束------ 點擊changeLanguage換語言
+    </script>
+
+</div> <!-- /.theme-main-menu -->

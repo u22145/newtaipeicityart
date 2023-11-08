@@ -1,0 +1,278 @@
+.nextBt {
+  text-align: right;
+  a {
+    background-color: $-mainColor1;
+  }
+}
+
+.performanceItem {
+  .explanatoryBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    & > p {
+      padding: 0 !important;
+
+      &:nth-child(odd) {
+        width: 90px;
+      }
+
+      &:nth-child(even) {
+        width: calc(100% - 90px);
+      }
+    }
+  }
+}
+
+.eventItem {
+  font-size: 18px;
+  line-height: 32px;
+
+  .explanatoryBox div {
+    color: #798598;
+  }
+
+  & > .row:first-child {
+    // 有圈圈的標題
+    .block-title {
+      margin-bottom: 30px;
+      position: relative;
+      margin-left: 60px;
+      padding-top: 10px;
+
+      span {
+        font-variant-numeric: tabular-nums;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        position: absolute;
+        left: -60px;
+        top: 0;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.explanatoryBox {
+  & > div,
+  & > div::before {
+    @include fontFamily;
+  }
+
+  & > div {
+    position: relative;
+
+    &::before {
+      position: absolute;
+    }
+  }
+}
+
+.vision {
+  .block-title span {
+    background-color: $-mainColor2;
+  }
+
+  .explanatoryBox div {
+    margin-left: 90px;
+
+    &::before {
+      left: -90px;
+    }
+
+    &:nth-child(1)::before {
+      content: '作品位置｜';
+    }
+
+    &:nth-child(2)::before {
+      content: '作品形式｜';
+    }
+
+    &:nth-child(3)::before {
+      content: '作品媒材｜';
+    }
+
+    &:nth-child(4) {
+      margin-left: 60px;
+
+      &::before {
+        left: -60px;
+        content: '尺寸｜';
+      }
+    }
+  }
+
+  &.en {
+    .explanatoryBox div {
+      margin-left: 103px;
+
+      &::before {
+        left: -103px;
+      }
+
+      &:nth-child(1)::before {
+        content: 'LOCATION｜';
+      }
+
+      &:nth-child(2) {
+        margin-left: 135px;
+
+        &::before {
+          left: -135px;
+          content: 'DESCRIPTION｜';
+        }
+      }
+
+      &:nth-child(3) {
+        margin-left: 100px;
+
+        &::before {
+          left: -100px;
+          content: 'MEDIUM｜';
+        }
+      }
+
+      &:nth-child(4)::before {
+        content: 'L x W x H｜';
+      }
+    }
+  }
+}
+
+.performanceItem {
+  .block-title span {
+    background-color: $-mainColor6;
+  }
+
+  .explanatoryBox div {
+    margin-left: 90px;
+
+    &::before {
+      left: -90px;
+    }
+
+    &:nth-child(1)::before {
+      content: '演出形式｜';
+    }
+
+    &:nth-child(2)::before {
+      content: '演出地點｜';
+    }
+
+    &:nth-child(3)::before {
+      content: '演出時間｜';
+    }
+  }
+
+  &.en {
+    .explanatoryBox div {
+      margin-left: 103px;
+
+      &::before {
+        left: -103px;
+      }
+
+      &:nth-child(1) {
+        margin-left: 60px;
+
+        &::before {
+          content: 'TYPE｜';
+          left: -60px;
+        }
+      }
+
+      &:nth-child(2)::before {
+        content: 'LOCATION｜';
+      }
+
+      &:nth-child(3)::before {
+        content: 'DATETIME｜';
+      }
+    }
+  }
+}
+
+.special {
+  .block-title span {
+    background-color: $-mainColor4;
+  }
+
+  &.en {
+    .explanatoryBox div {
+      margin-left: 103px;
+
+      &::before {
+        left: -103px;
+      }
+
+      &:nth-child(1)::before {
+        content: 'LOCATION｜';
+      }
+
+      &:nth-child(2)::before {
+        content: 'DATETIME｜';
+      }
+    }
+  }
+
+  .explanatoryBox div {
+    margin-left: 55px;
+
+    &::before {
+      left: -55px;
+    }
+
+    &:nth-child(1)::before {
+      content: '地點｜';
+    }
+
+    &:nth-child(2)::before {
+      content: '時間｜';
+    }
+  }
+}
+
+.sports {
+  .block-title span {
+    background-color: $-mainColor3;
+  }
+
+  a {
+    background-color: $-mainColor1;
+  }
+
+  &.en {
+    .explanatoryBox div {
+      margin-left: 110px;
+
+      &::before {
+        left: -110px;
+      }
+
+      &:nth-child(1)::before {
+        content: 'LOCATION｜';
+      }
+
+      &:nth-child(2)::before {
+        content: 'DATETIME｜';
+      }
+    }
+  }
+
+  .explanatoryBox div {
+    margin-left: 55px;
+
+    &::before {
+      left: -55px;
+    }
+
+    &:nth-child(1)::before {
+      content: '地點｜';
+    }
+
+    &:nth-child(2)::before {
+      content: '時間｜';
+    }
+  }
+}
